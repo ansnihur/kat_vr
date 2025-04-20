@@ -1,0 +1,118 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    background: linear-gradient(to right, #0f0f23, #1a1a3f);
+    color: white;
+  
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+  
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+  
+      .vr {
+        color: #00e5ff;
+      }
+    }
+  
+    .language {
+      cursor: pointer;
+      position: relative;
+  
+      &Dropdown {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #1e1e3f;
+        padding: 8px 0;
+        list-style: none;
+        width: max-content;
+        z-index: 10;
+  
+        li {
+          padding: 8px 16px;
+          cursor: pointer;
+  
+          &:hover {
+            background: #2a2a5f;
+          }
+        }
+      }
+    }
+  
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+  
+      a {
+        text-decoration: none;
+        color: white;
+      }
+  
+      .cta {
+        background: #00e5ff;
+        padding: 10px 16px;
+        border-radius: 6px;
+        color: #000;
+        font-weight: bold;
+      }
+  
+      .close {
+        display: none;
+      }
+    }
+  
+    .menuBtn {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 20px;
+      color: white;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      .nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #0f0f23;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+        display: none;
+  
+        &.open {
+          display: flex;
+        }
+  
+        .close {
+          display: block;
+          align-self: flex-end;
+          background: none;
+          border: none;
+          font-size: 20px;
+          color: white;
+        }
+      }
+  
+      .menuBtn {
+        display: block;
+      }
+    }
+  }
+  

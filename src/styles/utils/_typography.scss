@@ -1,0 +1,42 @@
+@use '../utils/mixins' as *;
+
+// ======================
+// TYPOGRAPHY EXTENDS
+// ======================
+
+// ========== MOBILE (default) ==========
+h1    { @extend %headline-1-mobile !optional; }
+h2    { @extend %headline-2-mobile !optional; }
+h3    { @extend %text-3-mobile !optional; }
+p     { @extend %text-1-mobile !optional; }
+span  { @extend %text-2-mobile !optional; }
+
+.button-text {
+  @extend %button-text-mobile !optional;
+}
+
+// ========== TABLET ==========
+@include on-tablet {
+  h1    { @extend %headline-1-tablet !optional; }
+  h2    { @extend %headline-2-tablet !optional; }
+  h3    { @extend %headline-3-tablet !optional; }
+  p     { @extend %text-1-tablet !optional; }
+  span  { @extend %text-2-tablet !optional; }
+
+  .button-text {
+    @extend %button-text-tablet !optional;
+  }
+}
+
+// ========== DESKTOP ==========
+@include on-desktop-s {
+  h1    { @extend %headline-1 !optional; }
+  h2    { @extend %headline-2 !optional; }
+  h3    { @extend %headline-3 !optional; }
+  p     { @extend %text-1 !optional; }
+  span  { @extend %text-2 !optional; }
+
+  .button-text {
+    @extend %button-text-desktop !optional;
+  }
+}

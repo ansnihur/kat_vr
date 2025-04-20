@@ -1,0 +1,59 @@
+// ======================
+// TYPOGRAPHY PLACEHOLDERS (Updated)
+// ======================
+
+// ----------- MOBILE -----------
+%headline-1-mobile {
+  font-size: 26px;
+  font-weight: 800; // Heavy
+  line-height: 130%;
+}
+
+%headline-2-mobile {
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 130%;
+}
+
+%text-3-mobile {
+  font-size: 12px;
+  font-weight: 400; // Regular
+  line-height: normal;
+}
+
+// ----------- WEB/DESKTOP -----------
+%headline-1 {
+  font-size: 46px;
+  font-weight: 800;
+  line-height: 130%;
+}
+
+%headline-2 {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: normal;
+}
+
+%headline-3 {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: normal;
+}
+
+%buttons-links {
+  font-size: 16px;
+  font-weight: 500; // Medium
+  line-height: normal;
+}
+
+%text-1 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+%text-2 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}

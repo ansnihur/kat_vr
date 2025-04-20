@@ -1,0 +1,55 @@
+@use 'sass:color';
+@use './vars' as *;
+
+@mixin hover($_property, $_toValue) {
+  & {
+    transition: #{$_property} 0.3s;
+  }
+
+  &:hover {
+    #{$_property}: $_toValue;
+  }
+}
+
+  
+  @mixin on-mobile {
+    @media (min-width: $mobile-min-width) {
+      @content;
+    }
+  }
+  
+  @mixin on-tablet {
+    @media (min-width: $tablet-min-width) {
+      @content;
+    }
+  }
+  
+  @mixin on-desktop-s {
+    @media (min-width: $desktop-s-min-width) {
+      @content;
+    }
+  }
+
+  @mixin on-desktop-m {
+    @media (min-width: $desktop-m-min-width) {
+      @content;
+    }
+  }
+
+  @mixin btn {
+    padding: 0.5rem 1rem;
+    background-color: $orange;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  @mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+    
+  
