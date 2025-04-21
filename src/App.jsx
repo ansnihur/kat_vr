@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.scss';
 
@@ -17,3 +18,15 @@ function App() {
 }
 
 export default App;
+=======
+import Home from './components/pages/Homescreen'
+
+function App(){
+    return(<div>
+        <Home />
+    </div>
+    )
+}
+
+export default App;
+>>>>>>> features
