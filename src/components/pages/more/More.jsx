@@ -43,7 +43,7 @@ const More = () => {
     <section className="features">
       {features.map((feature, index) => (
         <div className="feature-item" key={index}>
-          <div className="img">{feature.icon}</div>
+          <div className="icon">{feature.icon}</div>
           <h3>{feature.title}</h3>
           <p>{feature.description}</p>
         </div>
