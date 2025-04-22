@@ -1,5 +1,5 @@
 import './Homescreen.scss';
-import tech from '../assets/buttons.png';
+//import tech from '../../../assets/buttons.png';
 
 const Home = () => {
    return(
@@ -12,7 +12,6 @@ const Home = () => {
            <p>Discover the most comprehensive VR Locomotion system, 
             and unlock infinite motion in any games on any platforms!</p>
         </div>
-        <img src={tech} alt="Зображення" className="image" />
         </div>
    )
 }
