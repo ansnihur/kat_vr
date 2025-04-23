@@ -1,0 +1,269 @@
+$blue: #05C2DF;
+$grey: #929292;
+$tablet: 768px;
+$mobile: 320px;
+body{
+    background: #000000;
+    font-family: 'Mulish', sans-serif;
+}
+
+.text-wrapper1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    
+.text-block1 {
+    text-align: center; // центрирує всередині самого блоку
+    flex-direction: column;    
+    align-items: center;
+
+
+    h1{
+      font-size: 50px;
+      white-space: nowrap;
+      
+
+      .first-h2{
+        color: white;
+        font-weight: bold;
+
+      }
+      .second-h2{
+        font-weight: normal;
+        color: $blue;
+
+      }
+    }
+
+    p {
+        color: $grey;
+      margin-bottom: 1rem;
+      font-size: 24px;
+      max-width: 100%;
+      width: 70%;
+
+    }
+}
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+    justify-items: center;
+    text-align: center;
+  
+    .feature-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 220px;
+    }
+  
+    .icon {
+      height: 20px;
+      width: 60px;
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      // якщо це svg або зображення:
+      svg, img {
+        width: 60px;
+        height: 60px;
+        //object-fit: contain;
+      }
+    }
+  
+    h3 {
+      font-size: 1.1rem;
+      color: white;
+      margin-bottom: 0.5rem;
+    }
+  
+    p {
+      font-size: 0.95rem;
+      color: $grey;
+      line-height: 1.4;
+    }
+  }
+  
+  @media (max-width: $tablet) {
+    .text-wrapper1{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      margin-top: 60px;
+      left: 45px;
+      
+  .text-block1 {
+      text-align: center; // центрирує всередині самого блоку
+      flex-direction: column;    
+  
+      h1{
+        font-size: 15px;
+        white-space: nowrap;
+        text-align: center;
+        
+  
+        .first-h2{
+          color: white;
+          font-weight: bold;
+  
+        }
+        .second-h2{
+          font-weight: normal;
+          color: $blue;
+  
+        }
+      }
+  
+      p {
+          color: $grey;
+        margin-bottom: 0.5rem;
+        font-size: 10px;
+        max-width: 100%;
+        width: 60%;
+  
+      }
+  }
+  }
+  }
+
+  @media (max-width: $tablet) {
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(45px, 0.35fr));
+      gap: 0.35rem;
+      padding: 1.35rem;
+      justify-items: center;
+      text-align: center;
+    
+      .feature-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 66px;
+      }
+    
+      .icon {
+        height: 6px;
+        width: 18px;
+        margin-bottom: 0.35rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        // якщо це svg або зображення:
+        svg, img {
+          width: 18px;
+          height: 18px;
+          //object-fit: contain;
+        }
+      }
+    
+      h3 {
+        font-size: 0.5rem;
+        color: white;
+        margin-bottom: 0.2rem;
+      }
+    
+      p {
+        font-size: 0.35rem;
+        color: $grey;
+        line-height: 0.5rem;
+      }
+    }
+  }
+
+  @media (max-width: $mobile) {
+    .text-wrapper1{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      margin-top: 100px;
+      left: 75px;
+    }
+    .text-block1 {
+      text-align: center; // центрирує всередині самого блоку
+      flex-direction: column;    
+  
+      h1{
+        font-size: 25px;
+        white-space: nowrap;
+        text-align: center;
+        
+  
+        .first-h2{
+          color: white;
+          font-weight: bold;
+  
+        }
+        .second-h2{
+          font-weight: normal;
+          color: $blue;
+  
+        }
+      }
+  
+      p {
+          color: $grey;
+        margin-bottom: 0.5rem;
+        font-size: 16px;
+        max-width: 100%;
+        width: 70%;
+  
+      }
+  }
+  }
+
+  @media (max-width: $mobile) {
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(75px, 0.5fr));
+      gap: 0.5rem;
+      padding: 1rem;
+      justify-items: center;
+      text-align: center;
+    
+      .feature-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 110px;
+      }
+    
+      .icon {
+        height: 10px;
+        width: 30px;
+        margin-bottom: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        // якщо це svg або зображення:
+        svg, img {
+          width: 30px;
+          height: 30px;
+          //object-fit: contain;
+        }
+      }
+    
+      h3 {
+        font-size: 0.65rem;
+        color: white;
+        margin-bottom: 0.25rem;
+      }
+    
+      p {
+        font-size: 0.45rem;
+        color: $grey;
+        line-height: 0.7rem;
+      }
+    }
+  }
