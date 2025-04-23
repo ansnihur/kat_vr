@@ -1,7 +1,7 @@
-import hat from '../../../assets/graduation-hat.png';
-import muscle from '../../../assets/muscle.png'
-import residential from '../../../assets/residential.png'
-import social from '../../../assets/social-engineering.png'
+import hat from '../../assets/images/graduation-hat.png';
+import muscle from '../../assets/images/muscle.png'
+import residential from '../../assets/images/residential.png'
+import social from '../../assets/images/social-engineering.png'
 import './More.scss'
 
 
