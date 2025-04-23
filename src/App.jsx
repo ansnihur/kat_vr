@@ -1,12 +1,9 @@
-import Home from './components/pages/Homescreen'
-import More from './components/pages/more/More'
+import Homepage from './pages/Homepage';
 
 function App(){
     return(<div>
-        <Home />
-        <More />
-    </div>
-    )
+        <Homepage />
+    </div>)
 }
 
 export default App;

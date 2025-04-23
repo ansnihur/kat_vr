@@ -33,10 +33,10 @@ const features = [
 const More = () => {
    return(
     <div>
-    <div className="text-wrapper">
-        <div className="text-block">
-            <h1><span className="first-h1">MORE THAN</span>
-            <span className="second-h1"> GAMING!</span></h1>
+    <div className="text-wrapper1">
+        <div className="text-block1">
+            <h1><span className="first-h2">MORE THAN</span>
+            <span className="second-h2"> GAMING!</span></h1>
             <p>This also made for people who are interested in...</p>
         </div>
     </div>
