@@ -1,0 +1,155 @@
+.footer {
+    background-color: $blue-dark;
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+  
+    &__logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      @extend %headline-1-mobile;
+  
+      .footer__logo--highlight {
+        color: $blue;
+      }
+  
+      @include hover(color, $blue);
+    }
+  
+    &__nav {
+      ul {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+  
+        li {
+          a {
+            color: $white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+  
+            &:hover {
+              color: $blue;
+            }
+  
+            @extend %buttons-links;
+          }
+        }
+      }
+    }
+  
+    &__social {
+      display: flex;
+      gap: 15px;
+  
+      a {
+        img {
+          width: 20px;
+          height: 20px;
+          transition: opacity 0.3s ease;
+  
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+  }
+  
+  /* ========== MOBILE ========== */
+  @include on-mobile {
+    .footer {
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+    }
+  
+    .footer__logo {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+  
+    .footer__nav {
+      ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+      }
+  
+      li {
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+  
+    .footer__social {
+      gap: 10px;
+      margin-top: 1rem;
+    }
+  }
+  
+  /* ========== TABLET ========== */
+  @include on-tablet {
+    .footer {
+      flex-direction: row;
+      padding: 1.5rem;
+    }
+  
+    .footer__logo {
+      font-size: 1.4rem;
+    }
+  
+    .footer__nav {
+      ul {
+        gap: 15px;
+        flex-direction: row;
+      }
+  
+      li {
+        a {
+          font-size: 15px;
+        }
+      }
+    }
+  
+    .footer__social {
+      gap: 12px;
+    }
+  }
+  
+  /* ========== DESKTOP ========== */
+  @include on-desktop-s {
+    .footer {
+      padding: 2rem;
+    }
+  
+    .footer__logo {
+      font-size: 1.6rem;
+    }
+  
+    .footer__nav {
+      ul {
+        gap: 20px;
+      }
+  
+      li {
+        a {
+          font-size: 16px;
+        }
+      }
+    }
+  
+    .footer__social {
+      gap: 15px;
+    }
+  }
+  
