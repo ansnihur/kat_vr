@@ -10,7 +10,7 @@ const Home = () => {
                         <span className="text-wrapper__text-block-title-h1 --first">THE NEW START OF</span>
                         <span className="text-wrapper__text-block-title-h1 --second"> VR LOCOMOTION</span>
                     </h1>
-                    <p className="text-wrapper__text-block-description">
+                    <p className="text-wrapper__text-block-title-description">
                         Discover the most comprehensive VR Locomotion system, 
                         and unlock infinite motion in any games on any platforms!
                     </p>
