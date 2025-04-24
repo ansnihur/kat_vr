@@ -22,7 +22,7 @@ const features = [
       icon: <img src={muscle} alt="Зображення"/>,  
     },
     {
-        title: "SOCIAL INTERACTING",
+      title: "SOCIAL INTERACTING",
       description: "Hang out with your friends in the virtual world when you can’t meet space requirements",
       icon: <img src={social} alt="Зображення"/>,  
     },
@@ -32,23 +32,23 @@ const features = [
 
 const More = () => {
    return(
-    <div>
-    <div className="text-wrapper1">
-        <div className="text-block1">
-            <h1><span className="first-h2">MORE THAN</span>
-            <span className="second-h2"> GAMING!</span></h1>
-            <p>This also made for people who are interested in...</p>
-        </div>
-    </div>
-    <section className="features">
-      {features.map((feature, index) => (
-        <div className="feature-item" key={index}>
-          <div className="icon">{feature.icon}</div>
-          <h3>{feature.title}</h3>
-          <p>{feature.description}</p>
-        </div>
-      ))}
-    </section>
+    <div className="more">
+      <div className="more__text-display">
+          <div className="more__text-display-text-block">
+              <h1><span className="more__text-display-text-block-title --first">MORE THAN</span>
+              <span className="more__text-display-text-block-title --second"> GAMING!</span></h1>
+              <p className="more__text-display-text-block-description">This also made for people who are interested in...</p>
+          </div>
+      </div>
+      <section className="more__features">
+        {features.map((feature, index) => (
+          <div className="more__features-item" key={index}>
+            <div className="more__features-item-icon">{feature.icon}</div>
+            <h3 className="more__features-item-title">{feature.title}</h3>
+            <p className="more__features-item-description">{feature.description}</p>
+          </div>
+        ))}
+      </section>
     </div>
    )
 }
