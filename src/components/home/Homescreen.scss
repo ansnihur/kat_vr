@@ -1,138 +1,91 @@
-$blue: #05C2DF;
-$grey: #929292;
-$tablet: 768px;
-$mobile: 320px;
 
-body {
-    background: linear-gradient(to right, #191536, #000000);
-}
-
+//MOBILE
 .text-wrapper {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    width: 100%;
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  width: 100%;
 
-.text-block {
+  &__text-block-title {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     font-family: 'Mulish', sans-serif;
-    text-align: center;
 
-    h1 {
-        font-size: 54px;
-        text-align: center;
-        width: 40%;
-        white-space: normal;
-        margin-bottom: 1rem;
+    &-h1 {
+      font-size: 18px;
+      text-align: center;
+      width: 40%;
+      white-space: normal;
+      margin-bottom: 0.5rem;
 
-        .first-h1 {
-            color: white;
-            font-weight: bold;
-        }
+      &.--first {
+        flex-wrap: nowrap;
+        color: white;
+        font-weight: bold;
+      }
 
-        .second-h1 {
-            font-weight: normal;
-            color: $blue;
-        }
+      &.--second {
+        font-weight: normal;
+        color: $blue;
+      }
     }
 
-    p {
-        color: $grey;
+    &-description {
+      color: $gray;
+      margin-bottom: 0.5rem;
+      font-size: 12px;
+      text-align: flex-end;
+      max-width: 100%;
+      width: 50%;
+    }
+  }
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  img{
+    width: 850px;
+    height: 700px;
+  }
+}
+
+// TABLET
+@include on-tablet {
+  .text-wrapper {
+    padding: 0.7rem;
+
+    &__text-block {
+      &-description {
+        margin-bottom: 0.7rem;
+        font-size: 8px;
+      }
+    }
+  }
+}
+
+// DESKTOP
+@include on-desktop-s {
+  .text-wrapper {
+    padding: 1rem;
+
+    &__text-block-title {
+      &-h1 {
+        &--first {
+          font-size: 54px;
+        }
+        &--second {
+          font-size: 54px;
+        }
+      }
+      &-description {
         margin-bottom: 1rem;
         font-size: 24px;
-        text-align: center;
-        max-width: 100%;
-        width: 50%;
+      }
     }
+  }
+  
 }
-
-.image {
-    display: flex;
-    justify-content: center;
-}
-
-@media (max-width: $tablet) {
-    .text-wrapper {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        padding: 0.7rem;
-    }
-
-    .text-block {
-        text-align: center;
-        flex-direction: column;
-        font-family: 'Mulish', sans-serif;
-
-        h1 {
-            font-size: 18px;
-            text-align: center;
-            max-width: 100%;
-            width: 50%;
-
-            .first-h1 {
-                color: white;
-                font-weight: bold;
-            }
-
-            .second-h1 {
-                font-weight: normal;
-                color: $blue;
-            }
-        }
-
-        p {
-            color: $grey;
-            margin-bottom: 0.7rem;
-            font-size: 8px;
-            max-width: 100%;
-            width: 50%;
-        }
-    }
-}
-
-@media (max-width: $mobile) {
-    .text-wrapper {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        padding: 0.5rem;
-    }
-
-    .text-block {
-        text-align: center;
-        flex-direction: column;
-        font-family: 'Mulish', sans-serif;
-
-        h1 {
-            font-size: 27px;
-            text-align: center;
-            max-width: 100%;
-            white-space: normal;
-            width: 50%;
-
-            .first-h1 {
-                color: white;
-                font-weight: bold;
-            }
-
-            .second-h1 {
-                font-weight: normal;
-                color: $blue;
-            }
-        }
-
-        p {
-            color: $grey;
-            margin-bottom: 0.5rem;
-            font-size: 12px;
-            max-width: 100%;
-            width: 50%;
-        }
-    }
-} 
